@@ -1,0 +1,80 @@
+### Lister tous les livres
+GET http://localhost:8080/api/livres
+
+### Récupérer le livre avec l'ID 1
+GET http://localhost:8080/api/livres/1
+
+### Créer un livre
+POST http://localhost:8080/api/livres
+Content-Type: application/json
+
+{
+  "titre": "Harry Potter",
+  "isbn": "978-2-07-054127-4",
+  "categorie": "ROMAN"
+}
+
+### Modifier un livre
+PUT http://localhost:8080/api/livres/1
+Content-Type: application/json
+
+{
+  "titre": "Le Seigneur des Anneaux (édition collector)",
+  "isbn": "978-2-07-061190-3",
+  "categorie": "ROMAN"
+}
+
+### Supprimer un livre
+DELETE http://localhost:8080/api/livres/1
+
+### Rechercher par titre
+GET http://localhost:8080/api/livres/search?titre=harry
+
+### Filtrer par catégorie
+GET http://localhost:8080/api/livres/categorie/MANGA
+
+POST http://localhost:8080/api/auteurs
+Content-Type: application/json
+
+{
+  "nom": "Jean",
+  "prenom": "Paul"
+}
+
+POST http://localhost:8080/api/utilisateurs
+Content-Type: application/json
+
+{
+  "nom": "Dupont",
+  "prenom": "Jean",
+  "email": "jean.dupont@email.com"
+}
+
+GET http://localhost:8080/api/utilisateurs
+
+POST http://localhost:8080/api/exemplaires
+Content-Type: application/json
+
+{
+  "codeInventaire": "INV-001",
+  "etat": "NEUF",
+  "livreId": 1
+}
+
+GET http://localhost:8080/api/exemplaires
+
+GET http://localhost:8080/api/exemplaires/livre/1
+
+DELETE http://localhost:8080/api/exemplaires/1
+
+POST http://localhost:8080/api/emprunts
+Content-Type: application/json
+
+{
+  "utilisateurId": 1,
+  "exemplaireId": 1
+}
+
+GET http://localhost:8080/api/emprunts
+
+PATCH http://localhost:8080/api/emprunts/1/retour
