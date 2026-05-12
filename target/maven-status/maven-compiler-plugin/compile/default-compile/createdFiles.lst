@@ -1,0 +1,6 @@
+com/bibliotheque/api/ApiApplication.class
+com/bibliotheque/api/repository/LivreRepository.class
+com/bibliotheque/api/controller/LivreController.class
+com/bibliotheque/api/entity/Livre.class
+com/bibliotheque/api/entity/Livre$Categorie.class
+com/bibliotheque/api/service/LivreService.class

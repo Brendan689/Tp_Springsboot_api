@@ -1,0 +1,5 @@
+/mnt/c/Users/TAKATAI/sese/genie_logiciel/java-spring-boot-library/src/main/java/com/bibliotheque/api/ApiApplication.java
+/mnt/c/Users/TAKATAI/sese/genie_logiciel/java-spring-boot-library/src/main/java/com/bibliotheque/api/controller/LivreController.java
+/mnt/c/Users/TAKATAI/sese/genie_logiciel/java-spring-boot-library/src/main/java/com/bibliotheque/api/entity/Livre.java
+/mnt/c/Users/TAKATAI/sese/genie_logiciel/java-spring-boot-library/src/main/java/com/bibliotheque/api/repository/LivreRepository.java
+/mnt/c/Users/TAKATAI/sese/genie_logiciel/java-spring-boot-library/src/main/java/com/bibliotheque/api/service/LivreService.java
